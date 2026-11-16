@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><NSXTime/></title>
+</head>
+<body style="background:black;color:white;white;">
+	<img id="img2" src="11?width=\"200\"&height=\"200\".jpg" alt="CLOCK SERVER OFFLINE!"></img>
+	<p style="font-size:48px;"><NSXDate/></p>
+	<script>
+	aa = 100;window.onload = onload();
+	function onload()
+	{
+
+	}
+	var x = setInterval(function() { refClock(); }, 330);
+
+	function refClock() {
+	var sFile=String("fsfds" + aa);
+	aa++;
+	aa&= 3;
+	sFile = "width=\"" + window.innerWidth.toString() + "\"";
+	sFile += "&height=\"" + window.innerHeight.toString() + "\"";
+	  const elem2 = document.getElementById('img2');
+	  elem2.src="/" + "clock.jpg?" + sFile.trim();
+	}
+	</script>
+
+  </body>
+</html>
